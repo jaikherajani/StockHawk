@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinner"
+        android:layout_gravity="center_horizontal|top" />
+
+    <org.eazegraph.lib.charts.ValueLineChart
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="40dp"
+        app:egUseCubic="true"
+        app:egUseOverlapFill="true"
+        app:egIndicatorLineColor="#FE6DA8"
+        app:egIndicatorTextColor="@android:color/white"
+        app:egLegendHeight="40dp"
+        android:visibility="gone"/>
+
+</FrameLayout>
